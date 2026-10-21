@@ -38,9 +38,18 @@ Williams_Items= [
     }
 ]
 
-y=input("What would you like")
+y=input("What would you like(exit to leave)")
 
 def whatitem(items):
+    for item in (items):
+        x=0
+        if x==1:
+            print(Williams_Items[item])
+        else:
+            item+=1 and x==x+1
+        
+
+            
     if y=="Nvidia" or "RTX" or"0":
         print(Williams_Items[0])
     elif y=="milk" or "1":
@@ -49,4 +58,7 @@ def whatitem(items):
         print(Williams_Items[2])
     elif y=="Buy one get one free deal" or "Glasses"or"3":
         print(Williams_Items[3])
+    if y=="exit":
+        print("Have a good day")
+        break
 whatitem(y)
