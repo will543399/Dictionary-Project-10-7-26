@@ -10,9 +10,34 @@ def slot(q,slot1,slot2,slot3):
             print(f"Martha plays {t} before going broke")
             break
         if slot1%35==0:
-            q+=30 and q==q-1 and slot1==slot1+1 and t==t+1 
+            q+=30 and q==int(q)-1 and slot1==slot1+1 and t==t+1 
         elif slot1% 35!=0:
-            q==q-1 and slot1==slot1+1 and t==t+1
+            q==q-1
+            slot1==slot1+1
+            t+=1
+        if slot2%100==0:
+            q+=60
+            q-=1
+            slot2==slot2+1
+            t+=1
+        elif slot2% 100!=0:
+            q-=1
+            slot2+=1
+            t+=1
+        if slot3%10==0:
+            q+=9
+            q-=1
+            slot3+=1
+            t+=1
+        elif slot3% 10!=0:
+            q==q-1 and slot3==slot3+1 and t==t+1
+
+int(slot(77,4,9,3))
+'''
+        if slot1%35==0:
+            q+=30 and q==int(q)-1 and slot1==slot1+1 and t==t+1 
+        elif slot1% 35!=0:
+            q==int(q)-1 and slot1==slot1+1 and t==t+1
         if slot2%100==0:
             q+=60 and q==q-1 and slot2==slot2+1 and t==t+1 
         elif slot2% 100!=0:
@@ -21,6 +46,4 @@ def slot(q,slot1,slot2,slot3):
             q+=9 and q==q-1 and slot3==slot3+1 and t==t+1 
         elif slot3% 10!=0:
             q==q-1 and slot3==slot3+1 and t==t+1
-
-slot(77,4,9.3,1)
-        
+'''
