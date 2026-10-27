@@ -37,28 +37,39 @@ Williams_Items= [
 
     }
 ]
+history=[]
 
-y=input("What would you like(exit to leave)")
-
+y=input("Would you like to shop('exit' to leave, 'continue' to shop)")
+print(Williams_Items)
 def whatitem(items):
-    for item in (items):
-        x=0
-        if x==1:
-            print(Williams_Items[item])
-        else:
-            item+=1 and x==x+1
+    while True:
+        if y=="exit":
+            print("Have a good day")
+            break
+        if y=="continue":
+            for index, item in enumerate(Williams_Items):
+                print(index,item["name","price","department","description"])
+        
+        
+        
         
 
             
-    if y=="Nvidia" or "RTX" or"0":
-        print(Williams_Items[0])
-    elif y=="milk" or "1":
-        print(Williams_Items[1])
-    elif y=="Kevins monitor" or "2":
-        print(Williams_Items[2])
-    elif y=="Buy one get one free deal" or "Glasses"or"3":
-        print(Williams_Items[3])
-    if y=="exit":
-        print("Have a good day")
-        break
-whatitem(y)
+        if y=="Nvidia" or "RTX" or"0":
+            print(Williams_Items[0])
+            history.append(Williams_Items["price"])
+        if y=="milk" or "1":
+            print(Williams_Items[1])
+            history.append(Williams_Items["price"])
+        if y=="Kevins monitor" or "2":
+            print(Williams_Items[2])
+            history.append(Williams_Items["price"])
+        if y=="Buy one get one free deal" or "Glasses"or"3":
+            print(Williams_Items[3])
+            history.append(Williams_Items["price"])
+        p=input("are you sure")
+        if p=="yes" or "Yes":
+            history.append(y)
+        if p=="No" or"no":
+            print(Williams_Items[all])
+whatitem()
