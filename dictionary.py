@@ -37,33 +37,78 @@ Williams_Items= [
 
     }
 ]
-history=[]
+cart=[]
 
-y=input("Would you like to shop('exit' to leave, 'continue' to shop)")
 print(Williams_Items)
-def whatitem(items):
+def whatitem():
     while True:
-        if y=="exit":
+        y=input("Would you like to shop('1)exit' to leave, '2)continue to shop' 3) 'go to cart'4)Checkout )")
+        if y=="1":
             print("Have a good day")
             break
-        if y=="continue":
-            for index, item in enumerate(Williams_Items):
-                print(index,item["name","price","department","description"])
-        
-        
-        
+        if y=="2":
+                print(Williams_Items[0]["name"])
+                print(Williams_Items[0]["price"])
+                print(Williams_Items[0]["department"])
+                print(Williams_Items[0]["description"])
+                x=input("Do you want it?")
+                if x=="yes" or "Yes":
+                    cart.append(Williams_Items[0]["name","price"])
+                print(Williams_Items[1]["name"])
+                print(Williams_Items[1]["price"])
+                print(Williams_Items[1]["department"])
+                print(Williams_Items[1]["description"])
+                x==input("Do you want it?")
+                if x=="Yes" or"yes":
+                     cart.append(Williams_Items[1]["name","price"])
+                print(Williams_Items[2]["name"])
+                print(Williams_Items[2]["price"])
+                print(Williams_Items[2]["department"])
+                print(Williams_Items[2]["description"])
+                x==input("Do you want it?")
+                if x=="Yes" or"yes":
+                     cart.append(Williams_Items[2]["name","price"])
+                print(Williams_Items[3]["name"])
+                print(Williams_Items[3]["price"])
+                print(Williams_Items[3]["department"])
+                print(Williams_Items[3]["description"])
+                x==input("Do you want it?")
+                if x=="Yes" or"yes":
+                     cart.append(Williams_Items[3]["name","price"])
+                print(Williams_Items[4]["name"])
+                print(Williams_Items[4]["price"])
+                print(Williams_Items[4]["department"])
+                print(Williams_Items[4]["description"])
+                x==input("Do you want it?")
+                if x=="Yes" or"yes":
+                     cart.append(Williams_Items[4]["name","price"])
+        if y=="3":
+            for item in cart:
+                print(cart["name","price"])
+        total=0
+        if y=="4":
+            for item in cart:
+                print(cart["name","price"])
+                total+=cart["price"]
+                print(cart["name"])
+whatitem()
+            
+
+
         
 
+        
+"""
             
         if y=="Nvidia" or "RTX" or"0":
             print(Williams_Items[0])
-            history.append(Williams_Items["price"])
+            history.append(y)
         if y=="milk" or "1":
             print(Williams_Items[1])
-            history.append(Williams_Items["price"])
+            history.append(y)
         if y=="Kevins monitor" or "2":
             print(Williams_Items[2])
-            history.append(Williams_Items["price"])
+            history.append(y)
         if y=="Buy one get one free deal" or "Glasses"or"3":
             print(Williams_Items[3])
             history.append(Williams_Items["price"])
@@ -73,3 +118,4 @@ def whatitem(items):
         if p=="No" or"no":
             print(Williams_Items[all])
 whatitem()
+"""
