@@ -50,7 +50,6 @@ def whatitem():
                 print(Williams_Items[0]["name"])
                 print(Williams_Items[0]["price"])
                 print(Williams_Items[0]["department"])
-                print(Williams_Items[0]["description"])
                 x=input("Do you want it?")
                 if x.lower=="yes":
                     cart.append(Williams_Items[0])
@@ -59,28 +58,24 @@ def whatitem():
                 print(Williams_Items[1]["name"])
                 print(Williams_Items[1]["price"])
                 print(Williams_Items[1]["department"])
-                print(Williams_Items[1]["description"])
                 x==input("Do you want it?")
                 if x.lower=="Yes" or"yes":
                      cart.append(Williams_Items[1])
                 print(Williams_Items[2]["name"])
                 print(Williams_Items[2]["price"])
                 print(Williams_Items[2]["department"])
-                print(Williams_Items[2]["description"])
                 x==input("Do you want it?")
                 if x.lower=="Yes" or"yes":
                      cart.append(Williams_Items[2]["name","price"])
                 print(Williams_Items[3]["name"])
                 print(Williams_Items[3]["price"])
                 print(Williams_Items[3]["department"])
-                print(Williams_Items[3]["description"])
                 x==input("Do you want it?")
                 if x.lower=="Yes" or"yes":
                      cart.append(Williams_Items[3]["name","price"])
                 print(Williams_Items[4]["name"])
                 print(Williams_Items[4]["price"])
                 print(Williams_Items[4]["department"])
-                print(Williams_Items[4]["description"])
                 x==input("Do you want it?")
                 if x.lower=="Yes" or"yes":
                      cart.append(Williams_Items[4]["name","price"])
