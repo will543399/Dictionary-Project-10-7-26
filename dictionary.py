@@ -47,6 +47,7 @@ def whatitem():
             print("Have a good day")
             break
         if y=="2":
+                y=input("what would you like, 1)RTX")
                 print(Williams_Items[0]["name"])
                 print(Williams_Items[0]["price"])
                 print(Williams_Items[0]["department"])
