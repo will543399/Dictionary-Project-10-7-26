@@ -30,7 +30,7 @@ Williams_Items= [
 cart=[]
 def show_items(items):
     for index, item in enumarate(items):
-        print(index,":" item["name"])
+        print(f'index,":" (item["name"]')
 y=input("What would you like")
 print(Williams_Items(y))
 print(Williams_Items)
