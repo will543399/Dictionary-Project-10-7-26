@@ -32,21 +32,42 @@ total=0
 def show_items(items):
     for index, item in enumerate(items):
         print(f'{index},":" (item["name"]')
-while True:
-    def whatitem():
+def whatitem():
+
         show_items(Williams_Items)
-        print(Williams_Items[y])
+        print(Williams_Items[selected_number])
         cart.append(Williams_Items(selected_number))
-        y=input("What number")
-    for i in range(item):
-        selected_number=y
-        finish=input("are you done shopping(If yes) type Y, if you want to continue, type C").upper()
-        if finish=="Y":
-            item=Williams_Items[selected_number]
-            total=+item
-            cart.append(item)
-            break
-        elif finish=="N":
-            y=input("WHat number item would you like?")
+while True:
+    show_items(Williams_Items)
+    y=input("What number")
+    selected_number=y
+    whatitem()
+    finish=input("are you done shopping(If yes) type Y, if you want to continue, type C").upper()
+    if finish=="Y":
+        total+=sum(item["price"] for item in cart)
+        item=Williams_Items[selected_number]
+        total=+item
+        cart.append(item)
+        if cart:
+            for item in cart:
+                print(item['name'],item['price'])
+                print(" ")
+            else:
+                print("Your cart is empty").lower()
+            z=input("Check out????")
+            if z=="yes":
+                print(" ")
+                print("receipt")
+                print(" ")
+                for item in cart:
+                    print(item["name"],item["price"])
+                    print(" ")
+                    print("Total:"+ float(total))
+                    break
+                else:
+                    print(" ")
+    elif finish=="C":
+        total+=sum(item["price"]for item in cart)
+
 
 
