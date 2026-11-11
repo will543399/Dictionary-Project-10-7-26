@@ -40,7 +40,7 @@ def show_items(items):
 def choose_item():
     show_items(Williams_Items)
     x = int(input("Which item number do you want to buy? "))
-    cart.append(f'Williams_Items{x}')
+    cart.append(f'Williams_Items[x]')
     print(Williams_Items[x])
 
 while True:
@@ -68,8 +68,8 @@ while True:
                 for item in cart:
                     print(item["name"],item["price"])
                     print(" ")
-                    print("Total:"+ float(total))
-                    break
+                print("Total:"+ float(total))
+                break
                 else:
                     print(" ")
     elif finish=="C":
