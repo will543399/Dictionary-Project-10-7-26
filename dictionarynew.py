@@ -21,7 +21,7 @@ Williams_Items= [
     },
     {
         "name":"Buy one get one free Aiden's glasses and Kevin's glasses",
-        "price":"One million",
+        "price":"10000",
         "department":"Used",
         "description":"From famous people, just very used"
 
