@@ -44,21 +44,20 @@ def choose_item():
     print(Williams_Items[x])
 
 while True:
-    show_items(Williams_Items)
 #    y=input("What number")
 #    selected_number=y
     choose_item()
     finish=input("are you done shopping(If yes) type Y, if you want to continue, type C").upper()
     if finish=="Y":
         total+=int(sum(item["price"] for item in cart))
-        item=Williams_Items[item]
-        total+=item
-        cart.append(item)
+#        item=Williams_Items[item]
+#        total+=item
+#        cart.append(item)
         if cart:
             for item in cart:
                 print(item['name'],item['price'])
                 print(" ")
-    else:
+        else:
         print("Your cart is empty".lower())
             z=input("Check out????")
             if z=="yes":
@@ -68,12 +67,12 @@ while True:
                 for item in cart:
                     print(item["name"],item["price"])
                     print(" ")
-                print(f'"Total:"+ float(total)')
+                print(f'"Total:"+ {float(total)}')
                 break
-                else:
-                    print(" ")
-    elif finish=="C";
-        total+=sum(int(item["price"]for item in cart))
+            else:
+                print(" ")
+#    elif finish=="C":
+#        total+=sum(int(item["price"]for item in cart))
 
 
 
